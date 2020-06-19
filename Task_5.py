@@ -126,18 +126,18 @@ def get_magnitude(x: tuple):
 #task_5((0, 0), 3000)
 
 def main():
-    baap_lst = list()
+    lst = list()
     
     for x in range(10000):
         y = task_5((0,0), 3000)
-        baap_lst.append(y)
+        lst.append(y)
         if x % 50 == 0: print(x)
 
     print("working")
-    print(mean(baap_lst))
-    print("length of list:", len(baap_lst))
+    print(mean(lst))
+    print("length of list:", len(lst))
     return 0
 
-y = task_5((0,0), 3000)
+y = task_5((0,0), 10000) #point of origin, steps
 print(y)
 #main()
