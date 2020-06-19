@@ -66,7 +66,9 @@ def task_5(start_pos: tuple, steps, radius=100):
                 continue
         
         random_walk_lst.append(current_pos)
-    return math.sqrt((random_walk_lst[-1][0]**2 + (random_walk_lst[-1][1])**2))
+    
+    #save distance from origin in this variable
+    return_value =  math.sqrt((random_walk_lst[-1][0]**2 + (random_walk_lst[-1][1])**2))
     
     print(random_walk_lst)
 
