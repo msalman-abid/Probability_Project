@@ -37,6 +37,7 @@ def random_walk_1D(start_pos_a, start_pos_b, steps, left_ratio, stationary_ratio
         i += 1
 
         if random_walk_lst_1[-1] == random_walk_lst_2[-1]:
+            print(i)
             i = steps + 1
 
     #Distance_from_start_pos = random_walk_lst[-1] - random_walk_lst[0]
