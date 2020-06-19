@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 
-def task_7(start_pos: tuple, steps, radius=25):
+def task_7(start_pos: tuple, steps, radius=100):
 
     fig = plt.figure()
     axs = plt.axes()
@@ -79,7 +79,7 @@ def task_7(start_pos: tuple, steps, radius=25):
         ln.set_data(xdata, ydata)
         return ln,
 
-    ani = FuncAnimation(fig, update, frames=np.linspace(0, len(random_walk_lst)-1, num=len(random_walk_lst)), interval=5,
+    ani = FuncAnimation(fig, update, frames=np.linspace(0, len(random_walk_lst)-1, num=len(random_walk_lst)), interval=0.5,
                         init_func=init, blit=True, repeat=False)
 
     plt.show()
@@ -115,4 +115,4 @@ def get_magnitude(x: tuple):
     return math.sqrt(x[0] ** 2 + x[1] ** 2)
 
 
-task_7((0, 0), 3000)
+task_7((0, 0), 10000)

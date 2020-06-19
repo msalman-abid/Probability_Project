@@ -91,6 +91,7 @@ def task_5(start_pos: tuple, steps, radius=100):
                         init_func=init, blit=True, repeat=False)
 
     plt.show()
+    return return_value
 
 
 def get_xy(hypt: int, theta: int):

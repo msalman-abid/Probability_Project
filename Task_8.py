@@ -17,8 +17,8 @@ def task_8(start_pos: tuple, radius=100):
 
     axs.add_artist(circle1)
 
-    pt1_r, pt2_r = np.random.uniform (high=100.0, size=2)
-    pt1_angle, pt2_angle = np.random.uniform (high=360.0, size=2)
+    pt1_r, pt2_r = np.random.uniform(high=100.0, size=2)
+    pt1_angle, pt2_angle = np.random.uniform(high=360.0, size=2)
 
     start_pos1 = get_full_coord(pt1_r, pt1_angle)
     start_pos2 = get_full_coord(pt2_r, pt2_angle)
@@ -136,7 +136,7 @@ def task_8(start_pos: tuple, radius=100):
 
     max_final = max(len(random_walk_n1), len(random_walk_n2))
 
-    ani = FuncAnimation(fig, update, frames=np.linspace(0, (max_final)-1, num=(max_final)), interval=5,
+    ani = FuncAnimation(fig, update, frames=np.linspace(0, (max_final)-1, num=(max_final)), interval=0.5,
                         init_func=init, blit=True, repeat=False)
 
     print("test", counter)
