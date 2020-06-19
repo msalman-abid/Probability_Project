@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from statistics import mean
 
-def task_5(start_pos: tuple, steps, radius=25):
+def task_5(start_pos: tuple, steps, radius=100):
 
-    radius = 25
+    radius = 100
     fig = plt.figure()
     axs = plt.axes()
 
